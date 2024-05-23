@@ -18,9 +18,9 @@
 <table class="table">
     <thead>
         <tr>
-            <th>Id</th>
+            <th class="hide-on-small1">Id</th>
             <th>Name</th>
-            <th>Email</th>
+            <th class="hide-on-small2">Email</th>
             <th>Phone</th>
             <th></th>
             <th></th>
@@ -31,9 +31,9 @@
         @foreach(var Contact in Model)
         {
             <tr>
-                <td>@Contact.Id</td>
+                <td class="hide-on-small1">@Contact.Id</td>
                 <td>@Contact.Name</td>
-                <td>@Contact.Email</td>
+                <td class="hide-on-small2">@Contact.Email</td>
                 <td>@Contact.Phone</td>
                 <td>
                     <a class="btn btn-primary" asp-controller="Contacts" asp-action="Edit" asp-route-id="@Contact.Id">Edit</a>
